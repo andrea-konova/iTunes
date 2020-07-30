@@ -70,4 +70,11 @@ export const videoPlayerInit = () => {
 	videoPlayer.addEventListener('play', toggleIcon);
 	videoPlayer.addEventListener('pause', toggleIcon);
 	videoPlayer.addEventListener('timeupdate', toggleTime);
+
+	videoPlayerInit.stop = () => {
+		if (!videoPlayer.paused) {
+			stopPlay();
+		}
+	};
+
 };

@@ -18,6 +18,10 @@ document.addEventListener('click', () => {
 				temp.style.display = 'none';
 				item.classList.remove('active');
 				playerBlock[i].classList.remove('active');
+
+				musicPlayerInit.stop();
+				radioPlayerInit.stop();
+				videoPlayerInit.stop();
 			}
 		});
 	}
